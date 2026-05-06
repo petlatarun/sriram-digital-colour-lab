@@ -26,7 +26,7 @@ function ModernUI() {
     'Traditional Wedding Albums',
     'Premium Photo Frames',
     'Passport Photos',
-    'Birthday Flex Printing',
+    'Flex Printing',
     'Custom Stickers',
     'PVC Photo Frames',
     'Invitation Cards',
@@ -190,14 +190,15 @@ function ModernUI() {
                 <div className="bg-white/10 rounded-2xl p-6">
                   <p className="text-red-100">Phone</p>
                   <h3 className="text-2xl font-bold mt-2">
-                    8330944999
+                    +91-8330944999
                   </h3>
                 </div>
 
                 <div className="bg-white/10 rounded-2xl p-6">
                   <p className="text-red-100">Location</p>
                   <h3 className="text-2xl font-bold mt-2">
-                    Narsipatnam Main Road
+                    SRIRAM COLOR LAB, Kotak Bank Opp.
+					Narsipatnam Main Road
                   </h3>
                 </div>
 
