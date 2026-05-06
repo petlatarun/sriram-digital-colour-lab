@@ -1,4 +1,4 @@
-export default function App() {
+function ModernUI() {
   const services = [
     {
       icon: '📸',
@@ -224,4 +224,100 @@ export default function App() {
       </a>
     </div>
   )
+}
+
+function ClassicUI() {
+  return (
+    <div className="min-h-screen bg-gray-100 text-gray-800">
+      <header className="bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 text-white py-10 text-center shadow-xl">
+        <h1 className="text-5xl font-extrabold">
+          Sriram Digital Colour Lab
+        </h1>
+        <p className="mt-4 text-xl">
+          Above More Main Road, Narsipatnam
+        </p>
+
+        <div className="mt-6 flex justify-center gap-4 flex-wrap">
+          <a
+            href="https://wa.me/918330944999"
+            target="_blank"
+            rel="noreferrer"
+            className="bg-green-500 hover:bg-green-600 px-6 py-3 rounded-2xl font-bold"
+          >
+            WhatsApp
+          </a>
+
+          <a
+            href="#services"
+            className="bg-white text-red-500 px-6 py-3 rounded-2xl font-bold"
+          >
+            View Services
+          </a>
+        </div>
+      </header>
+
+      <section className="max-w-7xl mx-auto px-6 py-20">
+        <div className="text-center mb-16">
+          <h2 className="text-5xl font-bold">Our Services</h2>
+          <p className="mt-4 text-gray-600 text-lg">
+            Professional printing and photo services.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-4 gap-8">
+          {[
+            'Wedding Albums',
+            'Photo Printing',
+            'Frames & Lamination',
+            'Flex Printing',
+          ].map((item, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-3xl shadow-xl p-8 text-center hover:scale-105 transition"
+            >
+              <div className="text-6xl mb-5">🖼️</div>
+              <h3 className="text-2xl font-bold">{item}</h3>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="bg-white py-20">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-bold">Available Works</h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              'Wedding Albums',
+              'LED Frames',
+              'Photo Prints',
+              'Birthday Flex',
+              'Custom Stickers',
+              'Invitation Cards',
+            ].map((work, index) => (
+              <div
+                key={index}
+                className="bg-gradient-to-br from-pink-500 to-red-500 text-white rounded-3xl p-10 text-center shadow-2xl"
+              >
+                <div className="text-6xl mb-5">✨</div>
+                <h3 className="text-3xl font-bold">{work}</h3>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <footer className="bg-black text-white text-center py-8">
+        <p>© 2026 Sriram Digital Colour Lab</p>
+      </footer>
+    </div>
+  )
+}
+
+export default function App() {
+  const useOldUI = true
+
+  return useOldUI ? <ClassicUI /> : <ModernUI />
 }
