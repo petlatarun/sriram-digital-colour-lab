@@ -317,7 +317,7 @@ function ClassicUI() {
 }
 
 export default function App() {
-  const useOldUI = true
+  const useOldUI = false
 
   return useOldUI ? <ClassicUI /> : <ModernUI />
 }
