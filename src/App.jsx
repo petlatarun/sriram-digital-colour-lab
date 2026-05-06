@@ -189,14 +189,14 @@ function ModernUI() {
               <div className="space-y-6">
                 <div className="bg-white/10 rounded-2xl p-6">
                   <p className="text-red-100">Phone</p>
-                  <h3 className="text-3xl font-bold mt-2">
+                  <h3 className="text-2xl font-bold mt-2">
                     +91-8330944999
                   </h3>
                 </div>
 
                 <div className="bg-white/10 rounded-2xl p-6">
                   <p className="text-red-100">Location</p>
-                  <h3 className="text-3xl font-bold mt-2">
+                  <h3 className="text-xl font-bold mt-2">
                     SRIRAM COLOR LAB, Kotak Bank Opp.
 					Narsipatnam Main Road
                   </h3>
